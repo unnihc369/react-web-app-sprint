@@ -73,10 +73,10 @@ function Game() {
   return (
     <div className="game">
       <h1 className="game-title">Tic Tac Toe</h1>
-      <div className="game-board">
+      <div className="game-board card__article">
         <div className="status">{status}</div>
         {[0, 1, 2].map((row) => (
-          <div className="board-row" key={row}>
+          <div className="board-row " key={row}>
             {[0, 1, 2].map((col) => renderSquare(row * 3 + col))}
           </div>
         ))}
