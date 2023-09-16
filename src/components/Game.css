@@ -1,0 +1,89 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.game-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #333;
+    padding: 20px;
+    gap: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.status {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.board-row {
+    display: flex;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #fff;
+    border: 2px solid #333;
+    margin-left: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+.square.x {
+    color: #f00;
+}
+
+.square.o {
+    color: #00f;
+}
+
+.square.winner {
+    background-color: #7FFF00;
+    color: #333;
+    font-weight: bold;
+}
+
+.reset-button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.winner {
+    background-color: #7FFF00 !important;
+    /* Green background for winning line */
+    color: #333 !important;
+    font-weight: bold;
+}
